@@ -26,7 +26,9 @@ const mongoose = require('mongoose');
 
 const postSchema = new mongoose.Schema({
     message: String,
-    author: String
+    author: String,
+    titre: String,
+    description: String,
 });
 
 module.exports = mongoose.model('Post', postSchema);
